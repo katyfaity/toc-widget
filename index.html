@@ -84,6 +84,9 @@ p{margin:0}
 .deleted button{color:var(--link);margin-left:6px}
 
 .sp{flex:1}
+.pv .t-sec,.pv .t-art,.pv .t-more,.v-wrap .t-sec,.v-wrap .t-art,.v-wrap .t-more{cursor:pointer}
+.pv .t-sec:hover>span:not(.ph),.pv .t-art:hover>span:not(.ph),.pv .t-more:hover,.v-wrap .t-sec:hover>span:not(.ph),.v-wrap .t-art:hover>span:not(.ph),.v-wrap .t-more:hover{text-decoration:underline!important;text-underline-offset:2px}
+.pv .t-sec:has(>.ph),.pv .t-art:has(>.ph),.v-wrap .t-sec:has(>.ph),.v-wrap .t-art:has(>.ph){cursor:default}
 .left,.ed-page,.v-ov,.v-scroll,.sec-b{scrollbar-width:none;-ms-overflow-style:none}
 .left::-webkit-scrollbar,.ed-page::-webkit-scrollbar,.v-ov::-webkit-scrollbar,.sec-b::-webkit-scrollbar{display:none;width:0;height:0}
 .sblk{display:none}
@@ -173,9 +176,9 @@ p{margin:0}
 .sec-i.top .sec-n{font-size:17px;font-weight:600}
 .sec-i.kb{min-height:37px}
 .sec-i:hover{background:#f2f3f7}
-.sec-i.mark{background:#eef4fd;position:relative}
-.sec-i.mark::before{content:'';position:absolute;left:4px;top:5px;bottom:5px;width:4px;border-radius:2px;background:#c4491c}
-.sec-kbh.mark{background:#eef4fd;position:relative}
+.sec-i.mark{position:relative}
+.sec-i.mark::before{content:'';position:absolute;left:0;top:50%;height:16px;margin-top:-8px;width:4px;border-radius:0 2px 2px 0;background:#c4491c}
+.sec-kbh.mark{position:relative}
 .sec-pk{margin-left:auto;padding-left:16px;font-size:15px;color:var(--link);display:none;flex:none;letter-spacing:-0.0141em}
 .sec-i:hover .sec-pk{display:block}
 .sec-pk:hover{opacity:.8}
@@ -577,7 +580,7 @@ p{margin:0}
     </div>
     <div class="sticker">
       <div class="st-status"><span data-ico="okcheck" style="color:#333"></span><span>Устный Ok</span><span>01.12.25</span></div>
-      <div class="st-card" style="font-size:12px;justify-content:space-between">Виджет оглавления<span style="color:var(--label)">прототип v48</span></div>
+      <div class="st-card" style="font-size:12px;justify-content:space-between">Виджет оглавления<span style="color:var(--label)">прототип v51</span></div>
       <div class="st-card"><span data-ico="pen"></span><div><div class="nm">Федотова Екатерина</div>
         <a href="https://online.saby.ru/opendoc.html?guid=09833038-5423-4199-a115-94b968a99048&client=3" target="_blank" rel="noopener">Согласование макета</a>
         <a href="https://online.saby.ru/page/kbase_entity/d9cc1bf4-0888-475f-b550-f73f3e66d19a?folderId=d6da64f1-3266-4f69-9521-152e40de7931" target="_blank" rel="noopener">Спецификация</a></div></div>
